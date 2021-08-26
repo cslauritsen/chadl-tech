@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: static-site
-        image: cslauritsen/justsotech-com:latest
+        image: cslauritsen/justsotech-com:0.1.1629991541
         imagePullPolicy: Always
         ports:
         - containerPort: 80
