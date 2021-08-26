@@ -1,13 +1,13 @@
 apiVersion: cert-manager.io/v1 
 kind: Certificate
 metadata:
-  name: blog2-prod-cert
-  namespace: hugo
+  name: justsotech-prod-cert
+  namespace: jst
 spec:
-  secretName: blog2-prod-tls
+  secretName: justsotech-prod-tls
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: blog2.chadl.tech
+  commonName: justsotech.com
   dnsNames:
-  - blog2.chadl.tech
+  - justsotech.com
