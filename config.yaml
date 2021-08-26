@@ -14,8 +14,9 @@ params:
     - GitHub
 
 permalinks:
-  posts: '/:year/:month/:title/'
-  tutorials: '/:year/:month/:title/'
+# posts: '/posts/:year/:month/:title/'
+# tutorials: '/tutorials/:year/:month/:title/'
+  /: '/:year/:month/:title/'
  
 menu:
   main:
