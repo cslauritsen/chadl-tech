@@ -1,0 +1,30 @@
+baseURL: https://justsotech.com/
+languageCode: 'en-us'
+title: That's Just So Tech
+#theme: hugo-theme-codex
+theme: ananke
+
+params:
+  twitter: https://twitter.com/cslauritsen
+  github: https://github.com/cslauritsen/
+  # ...
+
+  iconOrder: 
+    - Twitter
+    - GitHub
+
+permalinks:
+  posts: '/:year/:month/:title/'
+  tutorials: '/:year/:month/:title/'
+ 
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      title: posts
+      url: /posts
+    - identifier: tutorials
+      name: tutorials
+      title: tutorials
+      url: /tutorials
+

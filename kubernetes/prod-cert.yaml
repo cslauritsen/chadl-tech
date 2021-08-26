@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1 
+kind: Certificate
+metadata:
+  name: blog2-prod-cert
+  namespace: hugo
+spec:
+  secretName: blog2-prod-tls
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: blog2.chadl.tech
+  dnsNames:
+  - blog2.chadl.tech

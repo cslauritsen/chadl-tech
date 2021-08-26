@@ -1,14 +1,4 @@
 ---
-apiVersion: traefik.containo.us/v1alpha1
-kind: Middleware
-metadata:
-  name: redirect-https
-  namespace: hugo
-spec:
-  redirectScheme:
-    scheme: https
-    permanent: true
----
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -18,17 +8,13 @@ metadata:
     kubernetes.io/ingress.class: "traefik"
     # Tell traefik to use HTTP to talk to the backend
     ingress.kubernetes.io/protocol: http
-    # redirect inbound http -> https
-    traefik.ingress.kubernetes.io/redirect-entry-point: https 
-    cert-manager.io/cluster-issuer: "letsencrypt-staging"
-#   traefik.ingress.kubernetes.io/router.middlewares: hugo-redirect-https@kubernetescrd
 spec:
   tls:
   - hosts:
-    - chadl.tech
-    secretName: chadl-tech-tls
+    - blog2.chadl.tech
+    secretName: blog2-prod-tls
   rules:
-    - host: chadl.tech
+    - host: blog2.chadl.tech
       http:
         paths:
           - path: /
