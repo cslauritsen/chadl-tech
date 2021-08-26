@@ -1,6 +1,6 @@
-[submodule "lke-example/themes/ananke"]
-	path = lke-example/themes/ananke
+[submodule "themes/ananke"]
+	path = themes/ananke
 	url = https://github.com/budparr/gohugo-theme-ananke.git
-[submodule "containers/justsotech-com/themes/hugo-theme-codex"]
-	path = containers/justsotech-com/themes/hugo-theme-codex
+[submodule "themes/hugo-theme-codex"]
+	path = themes/hugo-theme-codex
 	url = https://github.com/jakewies/hugo-theme-codex.git
